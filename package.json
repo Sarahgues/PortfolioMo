@@ -1,0 +1,22 @@
+{
+    "name": "AnimerUnGradientEnArri-rePlan",
+    "version": "1.0.0",
+    "description": "Avec cours CSS/SASS Openclassrooms : \r * Avec cours CSS / SASS Openclassrooms: \r * Créez des animations CSS modernesr\r * Utilisez les effets avancés de CSS sur votre siter\r * Prenez en main Bootstrapr\r * Utilisez les effets avancés de CSS sur votre siter\ r *+ Créez votre menu interactif en images en HTML / CSS!\r * Simplifiez - vous le CSS avec Sassr\r* ",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass --watch ./main.scss:./style.css",
+        "bs": "browser-sync start --proxy localhost/**  --files '**/ *
+        ' --no-notify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sarahgues/AnimerUnGradientEnArri-rePlan"
+    },
+    "author": "Barkhoum GUESMIA",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Sarahgues/AnimerUnGradientEnArri-rePlan"
+    },
+    "homepage": "https://github.com/Sarahgues/AnimerUnGradientEnArri-rePlan"
+}
