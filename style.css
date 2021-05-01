@@ -1,56 +1,67 @@
-         @import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
-         body {
-             margin: 0;
-             height: 100vh;
-             width: 100%;
-             background: black;
-             display: flex;
-             font-family: 'Saira Stencil One', cursive;
-         }
-         
-         .container {
-             margin: auto;
-             padding: 20%;
-             position: relative;
-             height: 500px;
-             width: 550px;
-             overflow: hidden;
-         }
-         
-         h1,
-         .gradient {
-             position: absolute;
-             top: 35%;
-             left: 50%;
-             transform: translate(-50%, -50%)
-         }
-         
-         h1 {
-             margin: 0;
-             font-size: 3rem;
-             text-align: center;
-             text-transform: uppercase;
-             letter-spacing: .5rem;
-             padding-left: 20px;
-             z-index: 1;
-             color: white;
-             background: black;
-             mix-blend-mode: multiply;
-             width: 90%;
-         }
-         
-         .gradient {
-             height: 130px;
-             width: 300%;
-             background: linear-gradient(90deg, purple, rgb(8, 216, 231), pink, orange, red, purple, rgb(8, 216, 231), pink, orange, red, purple, rgb(8, 216, 231), pink, orange, red);
-             animation: gradient 5s linear infinite alternate;
-         }
-         
-         @keyframes gradient {
-             0% {
-                 transform: translate(-25%, -50%);
-             }
-             100% {
-                 transform: translate(-75%, -50%);
-             }
-         }
+    @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap');
+    body {
+        overflow: hidden;
+        height: 100vh;
+        font-family: 'Expletus Sans', cursive;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 15px 0 0 0;
+        text-transform: uppercase;
+    }
+    
+    .porfolio {
+        display: flex;
+        min-width: 600px;
+        max-width: 900px;
+        height: 400px;
+        margin: 4rem auto;
+    }
+    
+    .image {
+        min-width: 60px;
+        margin: 10px;
+        cursor: pointer;
+        transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .image.active {
+        flex-grow: 100;
+        max-width: 600px;
+        margin: 0px;
+        border-radius: 7px;
+        background-size: auto 100%;
+    }
+    
+    .image:not(.active) {
+        flex-grow: 1;
+        border-radius: 5px;
+    }
+    
+    .text-container {
+        width: 100%;
+        height: 400px;
+        padding: 2rem;
+        visibility: hidden;
+        transform: translateY(300px);
+        opacity: 0;
+        transition: all .4s ease;
+        background: linear-gradient(354deg, black 0%, transparent 72%);
+        color: white;
+        overflow: hidden;
+    }
+    
+    .text {
+        position: absolute;
+        bottom: 5rem;
+        overflow: hidden;
+    }
+    
+    .active .text-container {
+        visibility: visible;
+        transform: translateY(0px);
+        opacity: 1;
+    }

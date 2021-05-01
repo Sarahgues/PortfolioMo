@@ -6,6 +6,7 @@
 
 #### En formation chez Openclassrooms :
 
+##### cours :
 - Créez des animations CSS modernes
 - Utilisez les effets avancés de CSS sur votre site
 - Prenez en main Bootstrap
